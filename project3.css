@@ -1,0 +1,142 @@
+body{
+    margin: 0;
+}
+.container{
+    display: block;
+    width: 100vw;
+    height: 100vh;
+}
+.header{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 120px;
+    background-color: white ;
+}
+a{
+    direction: none;
+    color: white;
+}
+.circle{
+    height: 108px;
+    width: 108px;
+    height: 100vh;
+    width: 120px;
+    height: 120px;
+    background-color: rgb(62, 62, 62);
+    border-radius: 50%;
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circle:hover{
+    background-color: rgb(255, 92, 92);
+}
+.parent {
+    display: flex;
+    flex-direction: row;
+    padding: 10px 100px 10px 100px;
+}
+
+.option{
+    border: 0px white;
+    text-align: center;
+    align-items: center;
+    font-family:serif;
+    color: rgb(86, 86, 86);
+    width: 20vw;
+    height: 30px;
+}
+.option:hover{
+   background-color: rgb(255, 85, 85);
+   color: white;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 650px;
+    background-color: rgb(205, 203, 203);
+}
+.rotate-center{
+    border-radius: 15%;
+    width:200px;
+    height: 200px;
+    background-color: aqua;
+    animation-name: rotate-center;
+    animation-duration: 0.6s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+}
+@keyframes rotate-center{
+    to{
+        transform: rotate(360deg);
+    }
+}
+.rotate-top{
+    overflow: hidden;
+    border-radius: 15%;
+    width:200px;
+    height: 200px;
+    background-color: aqua;
+    animation-name: rotate-top;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+}
+@keyframes rotate-top{
+    to{
+        transform: rotate(360deg);
+        transform-origin: top center;
+    }
+}
+.rotate-tr{
+    border-radius: 15%;
+    width:200px;
+    height: 200px;
+    background-color: aqua;
+    animation-name: rotate-tr;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+}
+@keyframes rotate-tr{
+    to{
+        transform: rotate(360deg);
+        transform-origin: top right;
+    }
+}
+.rotate-right{
+    border-radius: 15%;
+    width:200px;
+    height: 200px;
+    background-color: aqua;
+    animation-name: rotate-right;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+}
+@keyframes rotate-tr{
+    to{
+        transform: rotate(360deg);
+        transform-origin: right center;
+    }
+}
+.rotate-br{
+    border-radius: 15%;
+    width:200px;
+    height: 200px;
+    background-color: aqua;
+    animation-name: rotate-br;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+}
+@keyframes rotate-br{
+    to{
+        transform: rotate(360deg);
+        transform-origin: bottom right;
+    }
+}
