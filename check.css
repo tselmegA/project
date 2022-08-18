@@ -1,23 +1,74 @@
+*{
+    margin: 0;
+}
 .container{
+    background: #f3f3f3;
     display: flex;
     justify-content: center;
     align-items: center;
-    width:100vw;
-    height: 100vh;
+    width: 100vw;
+    height: 100vh; 
 }
-.rotate-br{
-    border-radius: 15%;
-    width:200px;
-    height: 200px;
-    background-color: aqua;
-    animation-name: rotate-br;
-    animation-duration: 0.5s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: 1;
+.box{
+    border-radius: 20%;
+    width: 60px;
+    height: 60px;
+    background: white;
+    box-shadow:  0 0 0 #cccccc,
+                 0 0 0 #ffffff,
+                  10px 10px 10px #cccccc,
+                  -10px -10px 10px #ffffff;
+    animation:  box 3s 1s infinite alternate;
 }
-@keyframes rotate-br{
-    to{
+
+@keyframes box{
+    0% {
+        width: 60px;
+        height: 60px;
+        background: white;
+        box-shadow:  0 0 0 #cccccc,
+                     0 0 0 #ffffff,
+                    10px 10px 10px #cccccc ,
+                    -10px -10px 10px #ffffff ;
+    }
+    25% {
+        width: 60px;
+        height: 60px;
+        background: white;
+        box-shadow:  10px 10px 10px #ffffff
+                   10px 10px 10px #ffffff,
+                   0 0 0 #cccccc ,
+    }
+    50% {
+        
+        border-radius: 30%;
+        width: 100px;
+        height: 200px;
+        background: white;
+        box-shadow:  10px 10px 10px #ffffff,
+                   10px 10px 10px #cccccc,
+                   0 0 0 #cccccc ,
+                   0 0 0 #ffffff ;
+    }
+    75% {
         transform: rotate(360deg);
-        transform-origin:right center;
+        border-radius: 40%;
+        width: 400px;
+        height: 400px;
+        background: white;
+        box-shadow:  10px 10px 10px #cccccc,
+                   10px 10px 10px  #ffffff,
+                   0 0 0 #cccccc,
+                   0 0 0 #ffffff; 
+    }
+    100% {
+        transform: rotate(360deg);
+        border-radius: 50%;
+        width: 400px;
+        height: 400px;
+        background: white,
+                   0 0 0 #ffffff,
+                   0 0 0 #cccccc,
+                   2px 2px 2px #ffffff;
     }
 }
